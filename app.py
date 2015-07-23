@@ -14,30 +14,75 @@ api = Api(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(_basedir, 'bogie.db')
 
-# db = SQLAlchemy(app)
+db = SQLAlchemy(app)
+
+class Logz(db.Model):
+    __tablename__ = 'logs'
+    id = db.Column(db.Integer, primary_key=True)
+    systems = db.Column(db.String(50))
+    components = db.Column(db.String(220))
+    version = db.Column(db.String(220))
+    timestamp = db.Column(db.DateTime,unique=True)
+    source = db.Column(db.String(220))
+
+    def __init__(self,systems=None,components=None,version=None,timestamp=None,source=None):
+        self.systems = systems
+        self.components = components
+        self.version = version
+        self.timestamp = timestamp
+        self.source = source
+
+    def __repr__(self):
+        return "<'systems': %s, 'components': %s, 'version': %s, 'time': %s, 'source': %s>" % self.systems,self.components,self.version,self.timestamp,self.source
+    
+    def __str__(self):
+        return "{'systems': %s, 'components': %s, 'version': %s, 'time': %s, 'source': %s}" % self.systems,self.components,self.version,self.timestamp,self.source
+    
+    # def __repr__(self):
+    #     return {"systems": self.systems, "components": self.components, "version": self.version, "time": self.timestamp, "source": self.source}
+
+
+
+class Current(db.Model):
+    __tablename__ = 'current'
+    id = db.Column(db.Integer, primary_key=True)
+    systems = db.Column(db.String(50))
+    components = db.Column(db.String(220),unique=True)
+    version = db.Column(db.String(220))
+    timestamp = db.Column(db.String(220),unique=True)
+    source = db.Column(db.String(220))
+
+    def __init__(self,id=None,systems=None,components=None,version=None,timestamp=None,source=None):
+        self.id = id
+        self.systems = systems
+        self.components = components
+        self.version = version
+        self.timestamp = timestamp
+        self.source = source
+
+    def __repr__(self):
+        return {"systems": self.systems, "components": self.components, "version": self.version, "time": self.timestamp, "source": self.source}
+
+
 
 # later on
-db.init_app(app)
-
-
-from models import logz
+# db.init_app(app)
 
 
 # db.drop_all()                                                                                                                               
 # db.create_all()
-# admin = Logs('dev', 'dummy',"2.0","23.23.22","source")
-# db.session.add(admin)
+# dummy = logz('dev', 'dummy',"2.0",datetime.datetime.now(),"dummySource")
+# db.session.add(dummy)
 # db.session.commit()
 
 # @app.route('/get',methods = ['GET'])
-@app.route('/api/v1.0/logs', methods=['GET'])
+@app.route('/logs', methods=['GET'])
 def get_logs():
-    log = logz.query.all()
+    log = Logz.query.all()
     return render_template('hello.html',list_of_items=log)
-
-@app.route('/api/v1.0/logs/<string:components>', methods=['GET'])
+@app.route('/logs/<string:components>', methods=['GET'])
 def get__component_logs(components):
-    list_of_items = logz.query.filter_by(components=components)
+    list_of_items = Logz.query.filter_by(components=components).order_by(logz.timestamp.desc())
     return render_template('hello.html',list_of_items=list_of_items)
 
 
@@ -46,9 +91,9 @@ class TodoSimple(Resource):
         systems = request.form['systems']
         components = request.form['components']
         version = request.form['version']
-        timestamp = datetime.datetime.now()
+        timestamp = datetime.datetime.utcnow()
         source = request.form['source']
-        u = logz(systems, components, version, timestamp, source)
+        u = Logz(systems, components, version, timestamp, source)
         db.session.add(u)
         db.session.commit()
         return {'done':True}
@@ -60,12 +105,12 @@ class TodoSimple(Resource):
         systems = request.form['systems']
         timestamp = request.form['timestamp']
         source = request.form['source']
-        u = logz.query.filter_by(systems=systems, components=components, version=version, timestamp=timestamp,source=source).first()
+        u = Logz.query.filter_by(systems=systems, components=components, version=version, timestamp=timestamp,source=source).first()
         if u is not None:
             db.session.delete(u)
             db.session.commit()
             # return {'status':True}
-            return redirect('/api/v1.0/logs')
+            return redirect('/logs')
         return {'status':False}
 
 
@@ -76,7 +121,7 @@ class TodoSimple(Resource):
 
 
 
-api.add_resource(TodoSimple, '/api/v1.0/<string:param>')
+api.add_resource(TodoSimple, '/<string:param>')
 
 
 if __name__ == '__main__':
@@ -91,6 +136,6 @@ if __name__ == '__main__':
     # db_session.commit()
 
 
-# put('http://localhost:5000/put', data={'systems':'systems', 'components': 'components', 'version': 'version', 'time': 'time', 'source': 'source'}).json()
+# put('http://localhost:5000/put', data={'systems':'systems', 'components': 'components', 'version': 'version', 'source': 'source'})
 
 # get('http://localhost:5000/get')

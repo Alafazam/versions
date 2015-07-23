@@ -16,14 +16,14 @@
             <tbody>
                 <!-- {% for item in list_of_items %} -->
                 <tr>
-                    <th><a href="/api/v1.0/logs/{{item.components}}">{{item.components}}</a></th>
+                    <th><a href="/logs/{{item.components}}">{{item.components}}</a></th>
                     <th>{{item.version}}</th>
                     <th>{{item.systems}}</th>
                     <th>{{item.timestamp}}</th>
                     <th>{{item.source}}</th>
                     <th>
                         <div id="register_button">
-                            <form action="/api/v1.0/put" method="POST" datatype="json">
+                            <form action="/put" method="POST" datatype="json">
                                 <input type="text" name="components" value="{{item.components}}" hidden>
                                 <input type="text" name="version" value="{{item.version}}" hidden>
                                 <input type="text" name="systems" value="{{item.systems}}" hidden>
