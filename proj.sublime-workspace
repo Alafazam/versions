@@ -1,0 +1,1213 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"logz"
+			],
+			[
+				"j",
+				"json"
+			],
+			[
+				"in",
+				"inc	#include \"…\""
+			],
+			[
+				"dis",
+				"dist"
+			],
+			[
+				"qu",
+				"queue"
+			],
+			[
+				"g",
+				"gS"
+			],
+			[
+				"w",
+				"whil	myWhile"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"visi",
+				"visited"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"vi",
+				"visited"
+			],
+			[
+				"o",
+				"ontrack"
+			],
+			[
+				"ob",
+				"obstacle"
+			],
+			[
+				"p",
+				"printf	printf …"
+			],
+			[
+				"depth",
+				"depth_q"
+			],
+			[
+				"q",
+				"queue"
+			],
+			[
+				"max",
+				"max_depth"
+			],
+			[
+				"lis",
+				"LIS"
+			],
+			[
+				"tour",
+				"tour2"
+			],
+			[
+				"sol",
+				"sol2"
+			],
+			[
+				"r",
+				"readfile	Read File Into Vector"
+			],
+			[
+				"inc",
+				"inc	#include \"…\""
+			],
+			[
+				"min",
+				"_min"
+			],
+			[
+				"co",
+				"counter"
+			],
+			[
+				"le",
+				"len"
+			],
+			[
+				"ds",
+				"dseven"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"digi",
+				"digit"
+			],
+			[
+				"df",
+				"dfour"
+			],
+			[
+				"leng",
+				"length"
+			],
+			[
+				"x",
+				"x_win"
+			],
+			[
+				"f",
+				"for	For Loop"
+			],
+			[
+				"fr",
+				"for	For Loop"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"op",
+				"open"
+			],
+			[
+				"sc",
+				"sca	myScanf"
+			],
+			[
+				"odd",
+				"odd_a"
+			],
+			[
+				"eve",
+				"even_A"
+			],
+			[
+				"od",
+				"odd_A"
+			],
+			[
+				"for",
+				"for	For Loop"
+			],
+			[
+				"to",
+				"tolal_bud"
+			],
+			[
+				"if",
+				"if	If Condition"
+			],
+			[
+				"an",
+				"ans"
+			],
+			[
+				"ma",
+				"map	std::map"
+			],
+			[
+				"m",
+				"map"
+			],
+			[
+				"ho",
+				"homo"
+			],
+			[
+				"h",
+				"hetro"
+			],
+			[
+				"het",
+				"hetro"
+			],
+			[
+				"he",
+				"hetro"
+			],
+			[
+				"ba",
+				"bank"
+			],
+			[
+				"cont",
+				"control"
+			],
+			[
+				"cur",
+				"current_height"
+			],
+			[
+				"me",
+				"merge_sort"
+			],
+			[
+				"arr",
+				"aarr"
+			],
+			[
+				"ce",
+				"center_y"
+			],
+			[
+				"fi",
+				"filename"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"reset",
+				"resetPassword"
+			],
+			[
+				"fis",
+				"first_name"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"tru",
+				"TRUE"
+			],
+			[
+				"save",
+				"saveProfile"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"get",
+				"get_role"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"ev",
+				"event_name"
+			],
+			[
+				"Eve",
+				"Events"
+			],
+			[
+				"flask",
+				"flask_mail"
+			],
+			[
+				"pus",
+				"puts"
+			],
+			[
+				"int",
+				"input"
+			],
+			[
+				"te",
+				"temp"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"bor",
+				"borrow"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"power",
+				"power2"
+			],
+			[
+				"log",
+				"log2"
+			],
+			[
+				"cpp",
+				"cpp	myCpp"
+			],
+			[
+				"st",
+				"struct	struct"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"v",
+				"value1"
+			],
+			[
+				"value",
+				"value1"
+			],
+			[
+				"main",
+				"main	main()"
+			],
+			[
+				"js",
+				"grunt-contrib-jshint"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"de",
+				"dequeue	.dequeue()"
+			],
+			[
+				"z",
+				"z	z-index"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"pro",
+				"proto	Prototype"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"html",
+				"html	.html()"
+			],
+			[
+				"sr",
+				"string"
+			],
+			[
+				"user",
+				"usernames"
+			],
+			[
+				"json",
+				"jQuery.parseJSON	jQuery.parseJSON"
+			],
+			[
+				"post",
+				"postData"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"bo",
+				"bogie"
+			],
+			[
+				"iss",
+				"isset"
+			],
+			[
+				"po",
+				"postData"
+			],
+			[
+				"ctype_",
+				"ctype_digit"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"isse",
+				"isset"
+			],
+			[
+				"cty",
+				"ctype_digit"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"feed",
+				"feed_id"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"compa",
+				"Company"
+			],
+			[
+				"a",
+				"arra1"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"temp",
+				"temp1"
+			],
+			[
+				"arry",
+				"array2"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"number",
+				"number2"
+			],
+			[
+				"numbe",
+				"number1"
+			],
+			[
+				"admin_",
+				"admin_home"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ex",
+				"expression"
+			],
+			[
+				"str",
+				"strlen"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"hea",
+				"head_result"
+			],
+			[
+				"ne",
+				"nextInt"
+			],
+			[
+				"input",
+				"input2"
+			],
+			[
+				"cou",
+				"count"
+			],
+			[
+				"half",
+				"half_sum"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 1982,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/test.html",
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/hello.html",
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "models.py",
+			"settings":
+			{
+				"buffer_size": 1961,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"r",
+				"Build: Run"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"int",
+				"Package Control: Install Package"
+			],
+			[
+				"inta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"bea",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"SublimeLinter: Toggle Linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"consol",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 214.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Alafazam/Repos/version/versions/hello.html",
+		"/C/Users/Alafazam/Repos/version/versions/models.py",
+		"/C/Users/Alafazam/Repos/version/versions/database.py",
+		"/C/Users/Alafazam/Programming/SPOJ/GAMES.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/FPOLICE.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/UTILS.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/TOURIST.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/STK2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/STK.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/POWERCAR.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PT07Z dfs.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/LABYR1.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/UCV2013E.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/UCV2013H.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/test.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/Test_case_maker.js",
+		"/C/Users/Alafazam/Programming/SPOJ/input.js",
+		"/C/Users/Alafazam/Programming/SPOJ/TAP2013C.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/input.cpp",
+		"/C/Users/Alafazam/Desktop/Recorded Steps.htm",
+		"/C/Users/Alafazam/Desktop/Recording_20150721_1106.mht",
+		"/C/Users/Alafazam/Desktop/Aufgezeichnete Schritte.htm",
+		"/C/Users/Alafazam/Programming/SPOJ/KOZE.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/UOFTCE.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MAKEMAZE.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/BITMAP.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/POWFIB.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/POWFIB.py",
+		"/C/Users/Alafazam/Repos/tv15/tvz/app/forms.py",
+		"/C/Users/Alafazam/Programming/SPOJ/main.py",
+		"/C/Users/Alafazam/Programming/SPOJ/IITKWPCA.py",
+		"/C/Users/Alafazam/Programming/SPOJ/HERDING.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/EMTY2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MAY99_3.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/ACMT.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/HDEVIL.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PUCMM334.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/CRNVALEN.cpp",
+		"/C/Users/Alafazam/AppData/Roaming/Sublime Text 3/Packages/User/mycpp.sublime-build",
+		"/C/Program Files/Sublime Text 3/Packages/C++.sublime-package",
+		"/C/Users/Alafazam/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/C/Users/Alafazam/Programming/SPOJ/ACMT.CPP",
+		"/C/Users/Alafazam/Downloads/ideone_c1aiE4.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PROFF.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/SYNC13C.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PROFF.CPP",
+		"/C/Users/Alafazam/Programming/SPOJ/GLJIVE.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/UJ01.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/STOCLK.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/HDEVIL2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/IITKWPCA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/GUANGGUN.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PT07Z itr.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PT07Z.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/XMEN.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/XMEN2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/COMDIV.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/INVCNT.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/IITKWPCB.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/RPLD.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PHONELST.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/VOWELS.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/CODEM4.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MARBLES2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/LEARN_ACPC11B.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/FACEFRND.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/CLONE .cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/CANTON.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/BRIDGE.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/ASSIST.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/KURUK14.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PIGBANK.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/ATOMS.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MRECAMAN.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/LKS.cpp",
+		"/A/EVERYTHING/PHONE/Accdetails.ta",
+		"/C/Users/Alafazam/Programming/SPOJ/PIGBANK_test.cpp",
+		"/C/Users/Alafazam/AppData/Roaming/Sublime Text 3/Packages/User/myCpp.sublime-snippet",
+		"/C/Users/Alafazam/Programming/SPOJ/todoChandu.js",
+		"/C/Users/Alafazam/Programming/SPOJ/todo.js",
+		"/C/Users/Alafazam/Programming/SPOJ/TWOSQRS.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/ROOTCIPH.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/UCBINTA.CPP",
+		"/C/Users/Alafazam/AppData/Roaming/Sublime Text 3/Packages/User/myCppTemp.sublime-snippet",
+		"/C/Users/Alafazam/Programming/CodeBlocks/FILEREAD.c",
+		"/C/Users/Alafazam/Programming/CodeBlocks/SPOJ1.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MISERMAN.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/HUBULLU.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/DOTAA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/QUADAREA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/alafazam.js",
+		"/C/Users/Alafazam/Programming/SPOJ/WACHOVIA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/NFURY.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MAXWOODS.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/RPLC.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/WPC4F.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/CADYDIST.cpp",
+		"/C/Users/Alafazam/AppData/Local/Temp/Ultra$ISO/MISERMAN.cpp",
+		"/C/Users/Alafazam/AppData/Local/Temp/Ultra$ISO/BIA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/BANDW.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/MAJOR.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PUCMM025.cpp",
+		"/C/Users/Alafazam/AppData/Local/Temp/Ultra$ISO/EPALIN.cpp",
+		"/A/EVERYTHING/Books/Algorithms/Knuth/SPOJ.iso",
+		"/C/Users/Alafazam/Programming/SPOJ/DOTAA,cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/BVAAN.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PARTY.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/SILVER.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/LASTDIG2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/TOE1.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/LASTDIG22.cpp",
+		"/C/Users/Alafazam/AppData/Local/Temp/Ultra$ISO/LASTDIG2.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/LASTDIG.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/todoALLDP.js",
+		"/C/Users/Alafazam/Programming/SPOJ/todoDP.js",
+		"/C/Users/Alafazam/Programming/SPOJ/CRSCNTRY.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/SCPC11B.cpp",
+		"/C/Users/Alafazam/AppData/Roaming/Sublime Text 3/Packages/User/mynode.sublime-build",
+		"/C/Users/Alafazam/AppData/Roaming/Sublime Text 3/Packages/User/untitled.sublime-build",
+		"/C/Users/Alafazam/Programming/SPOJ/ENIGMATH.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/ANARC09A.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/KNAPSACK.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/JULKA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/asciifull.gif",
+		"/C/Users/Alafazam/Programming/SPOJ/NY10A.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/GCD2.cpp",
+		"/C/Users/Alafazam/Desktop/New folder (2)/New folder/quickStartPage.html",
+		"/C/Users/Alafazam/Programming/SPOJ/password_gentrater.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"list_of_items",
+			"item",
+			"list",
+			"event",
+			"</a>",
+			"source",
+			"list",
+			"source",
+			"events",
+			"events_list",
+			"events",
+			"get_all_events",
+			"arif",
+			"\"",
+			"Logz",
+			"flask_sqlalchemy",
+			"components",
+			"\"",
+			"source",
+			"time",
+			"version",
+			"components",
+			"systems",
+			"my_list",
+			"self",
+			"Integer",
+			"DateTime",
+			"String",
+			"User",
+			"s",
+			"%r",
+			"\"",
+			"String",
+			"Integer",
+			"String",
+			"Column",
+			"Base",
+			"30000",
+			"DFSUtil",
+			"visited",
+			"typedef",
+			"READ",
+			"count",
+			"Descprition",
+			"                            q.push(z + 1);\n",
+			"'1'",
+			"table",
+			"iter",
+			"maxi",
+			"fastRead_string",
+			"9999999",
+			"gc",
+			"getchar",
+			"str",
+			"fastRead_string",
+			"getchar_unlocked",
+			"count",
+			"== 0",
+			"&& &&",
+			"i",
+			"219999",
+			"99",
+			"sum",
+			"count",
+			"!= '#'",
+			"bfs",
+			"== '.'",
+			"a[i - 1][j] == '.'",
+			"int",
+			"register",
+			"getchar_unlocked",
+			"1000",
+			"fastRead_string",
+			"str",
+			"i - 1",
+			"value",
+			"getchar_unlocked",
+			"112500",
+			"13315200",
+			"count",
+			"==",
+			"== '.'",
+			"getchar",
+			"_unlocked",
+			"[j]",
+			"[i + 1]",
+			"sheep",
+			"wolf",
+			"sheep",
+			")||[",
+			"&&",
+			"    \n",
+			"fastRead_string",
+			"9999999",
+			"i",
+			"a[",
+			"root",
+			"&& val + 1",
+			"val + 1",
+			"roots",
+			"INF",
+			"value[",
+			"value",
+			"getchar",
+			"getchar_unlocked",
+			"q.push(roots);",
+			"innerQ",
+			"                    q.push(roots)\n",
+			")\n",
+			"remove",
+			"char",
+			"value",
+			"innerQ",
+			"one",
+			"ss",
+			"10000007",
+			"000",
+			"100000007",
+			"1000000007",
+			"restOfPot",
+			"10000007",
+			"10007",
+			"10000007",
+			"count",
+			"1000000007",
+			"right",
+			"left",
+			"up"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								952,
+								952
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/hello.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1961,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								739
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/mycpp.sublime-build",
+	"project": "proj.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

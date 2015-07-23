@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- <script src="/static/js/moment.min.js"></script> -->
+<div class="container-fluid">
+    <table class="table">
+        <div>
+            <thead>
+                <tr>
+                    <th>components</th>
+                    <th>version</th>
+                    <th>systems</th>
+                    <th>time</th>
+                    <th>source</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- {% for item in list_of_items %} -->
+                <tr>
+                    <th><a href="/api/v1.0/logs/{{item.components}}">{{item.components}}</a></th>
+                    <th>{{item.version}}</th>
+                    <th>{{item.systems}}</th>
+                    <th>{{item.timestamp}}</th>
+                    <th>{{item.source}}</th>
+                    <th>
+                        <div id="register_button">
+                            <form action="/api/v1.0/put" method="POST" datatype="json">
+                                <input type="text" name="components" value="{{item.components}}" hidden>
+                                <input type="text" name="version" value="{{item.version}}" hidden>
+                                <input type="text" name="systems" value="{{item.systems}}" hidden>
+                                <input type="text" name="timestamp" value="{{item.timestamp}}" hidden>
+                                <input type="text" name="source" value="{{item.source}}" hidden>
+                                <button id="dle" name="dle" value="Delete" class="btn btn-danger" type="submit">Delete</button>
+                            </form>
+                        </div>
+                    </th>
+                    <!--                     <th><div class="btn btn-danger"  id="ajax-remove" data-components="{{item.components}}" data-version="{{item.version}}"  data-systems="{{item.systems}}" data-timestamp="{{item.timestamp}}" data-source="{{item.source}}">Delete</div></th>
+                    -->
+                </tr>
+                <!-- {% endfor %} -->
+            </tbody>
+        </div>
+    </table>
+</div>
+<script>
