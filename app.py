@@ -78,11 +78,11 @@ class Current(db.Model):
 # @app.route('/get',methods = ['GET'])
 @app.route('/logs', methods=['GET'])
 def get_logs():
-    log = Logz.query.all()
+    log = Logz.query.order_by(Logz.timestamp.desc()).all()
     return render_template('hello.html',list_of_items=log)
 @app.route('/logs/<string:components>', methods=['GET'])
 def get__component_logs(components):
-    list_of_items = Logz.query.filter_by(components=components).order_by(logz.timestamp.desc())
+    list_of_items = Logz.query.filter_by(components=components).order_by(Logz.timestamp.desc())
     return render_template('hello.html',list_of_items=list_of_items)
 
 
