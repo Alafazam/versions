@@ -3,7 +3,6 @@ from flask_restful import Resource, Api
 from flask_sqlalchemy import SQLAlchemy
 from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for
 
-from models import db
 
 import os,datetime
 _basedir = os.path.abspath(os.path.dirname(__file__))
