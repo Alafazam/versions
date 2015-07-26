@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>VISOCON</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <!-- <code>&lt;section&gt;</code> should be wrapped as inline -->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h2 class="text-center">Active system components version storage and visualization</h2>
+        </div>
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>components</th>
+                        <th>version</th>
+                        <th>systems</th>
+                        <th>time</th>
+                        <th>source</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- {% for item in list_of_items %} -->
+                    <tr>
+                        <th><a href="/current/components/{{item.components}}">{{item.components}}</a></th>
+                        <th>{{item.version}}</th>
+                        <th><a href="/current/systems/{{item.systems}}">{{item.systems}}</a></th>
+                        <th>{{item.timestamp}}</th>
+                        <th>{{item.source}}</th>
+                        <th>
+                            <div id="register_button">
+                                <form action="/update" method="POST" datatype="json">
+                                    <input type="text" name="components" value="{{item.components}}" hidden>
+                                    <input type="text" name="version" value="{{item.version}}" hidden>
+                                    <input type="text" name="systems" value="{{item.systems}}" hidden>
+                                    <input type="text" name="timestamp" value="{{item.timestamp}}" hidden>
+                                    <input type="text" name="source" value="{{item.source}}" hidden>
+                                    <input type="text" name="next" value="current" hidden>
+                                    <button id="dle" name="dle" value="Delete" class="btn btn-danger" type="submit">Delete</button>
+                                </form>
+                            </div>
+                        </th>
+                        <!--                     <th><div class="btn btn-danger"  id="ajax-remove" data-components="{{item.components}}" data-version="{{item.version}}"  data-systems="{{item.systems}}" data-timestamp="{{item.timestamp}}" data-source="{{item.source}}">Delete</div></th>
+                        -->
+                    </tr>
+                    <!-- {% endfor %} -->
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
