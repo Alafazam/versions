@@ -56,11 +56,14 @@ def index():
 @app.route('/current', methods=['GET'])
 def current():
     query = db.session.query(Logz.components.distinct()).all()
+    systms = db.session.query(Logz.systems.distinct()).all()
+
     log = []
     for x in query:
+        for y in systms:
+            log .append(Logz.query.filter_by(components=x[0],systems=y[0]).order_by(Logz.timestamp.desc(),Logz.systems).first())
         # print x[0]
         # log.append(Logz.query.filter_by(components=x[0]).order_by(Logz.timestamp.desc()).first())
-        log +=Logz.query.filter_by(components=x[0]).order_by(Logz.timestamp.desc(),Logz.systems).all()
     return render_template('current.html',list_of_items=log)
 
 @app.route('/current/components/<string:components>', methods=['GET'])
