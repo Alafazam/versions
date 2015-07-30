@@ -34,7 +34,7 @@ docker build -t active_versions:v2 .
 ### Usage
 
 ```bash
-docker run -d -p 80:80 active_versions
+docker run -d -p 80:80 active_versions:v2
 ```
 
 After few seconds, open `http://<host>` to see the Flask app.
