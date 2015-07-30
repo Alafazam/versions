@@ -56,8 +56,9 @@ After few seconds, open `http://<host>` to see the Flask app.
 
     !python
 	>>>from requests import put
-	>>>put('http://<host>/update', data={'systems':'system_type', 'components': 'component_name', 'version': 'value', 'source': 'author_name'})
-    [response 200]
+	>>>put('http://192.168.59.103/update', data={'systems':'dev', 'components': 'components 1', 'version': 'version 2.', 'source': 'alaf',   'user':'q','pass':'a'}).json()
+
+    Done
 ---
 
 ## Viewing Logs

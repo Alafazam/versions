@@ -253,15 +253,13 @@ class TodoSimple(Resource):
             u = Logz(systems, components, version, timestamp, source)
             db.session.add(u)
             db.session.commit()
-            return {'done': True}
+            return "{'done': True}"
         else:
-            return {'Error': "Unauthorised Access"}
+            return "'Error': Unauthorised Access"
 
         # return "{'systems': %s, 'components': %s, 'version': %s, 'time': %s, 'source': %s}"% systems,components,version,time,source
 
     def post(self):
-        susername = request.form['user']
-        spass = request.form['pass']
         components = request.form['components']
         version = request.form['version']
         systems = request.form['systems']
@@ -269,21 +267,13 @@ class TodoSimple(Resource):
         source = request.form['source']
         nextz = request.form['next']
 
-        if username == 'bogie'and password == 'bogie' :
-            spass = 'bogie'
-            susername = 'bogie' 
-        
-        if username==susername and password == spass:
-            u = Logz.query.filter_by(systems=systems, components=components, version=version, timestamp=timestamp,
-                                     source=source).first()
-            if u is not None:
-                db.session.delete(u)
-                db.session.commit()
-                # return {'status':True}
-                return redirect('/' + nextz)
-            return {'status': False}
-        else:
-            return {'Error': "Unauthorised Access"}
+        u = Logz.query.filter_by(systems=systems, components=components, version=version, timestamp=timestamp, source=source).first()
+        if u is not None:
+            db.session.delete(u)
+            db.session.commit()
+            # return {'status':True}
+        return redirect('/' + nextz)
+    return "'status': False"
 
 
 
