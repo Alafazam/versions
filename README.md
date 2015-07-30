@@ -3,7 +3,7 @@
 
 ## Webservice
 
- - PUT /version
+ - PUT /update
 
  - JSON Fields
    + system : "dev" | "test" | "live"
