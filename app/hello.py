@@ -2,11 +2,22 @@ from flask import Flask, request, send_from_directory
 from flask_restful import Resource, Api
 from flask_sqlalchemy import SQLAlchemy
 from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for
+from flask.ext.login import LoginManager
+ 
 
 import os, datetime
 
 _basedir = os.path.abspath(os.path.dirname(__file__))
 print datetime.datetime.now()
+
+
+try:
+    username = os.environ['user']
+    password = os.environ['pass']
+except KeyError as e:
+    username = 'bogie'
+    password = 'bogie'
+
 
 app = Flask(__name__)
 api = Api(app)
@@ -14,6 +25,9 @@ api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(_basedir, 'bogie.db')
 
 db = SQLAlchemy(app)
+
+login_manager = LoginManager()
+login_manager.init_app(app)
 
 
 class Logz(db.Model):
@@ -38,6 +52,37 @@ class Logz(db.Model):
 
         # def __repr__(self):
         #     return {"systems": self.systems, "components": self.components, "version": self.version, "time": self.timestamp, "source": self.source}
+
+class User(db.Model):
+    __tablename__ = "users"
+    id = db.Column('user_id',db.Integer , primary_key=True)
+    username = db.Column('username', db.String(20), unique=True , index=True)
+    password = db.Column('password' , db.String(10))
+    # email = db.Column('email',db.String(50),unique=True , index=True)
+    registered_on = db.Column('registered_on' , db.DateTime)
+ 
+    def __init__(self , username ,password , email):
+        self.username = username
+        self.password = password
+        self.email = email
+        self.registered_on = datetime.utcnow()
+ 
+    def is_authenticated(self):
+        return True
+ 
+    def is_active(self):
+        return True
+ 
+    def is_anonymous(self):
+        return False
+ 
+    def get_id(self):
+        return unicode(self.id)
+ 
+    def __repr__(self):
+        return '<User %r>' % (self.username)
+
+
 
 
 # later on
@@ -116,6 +161,13 @@ def get__system_logs(systems):
     return render_template('hello.html', list_of_items=list_of_items)
 
 
+
+@app.route('/test', methods=['GET'])
+def test():
+    val = username + " " + password
+    return render_template('test.html', value=val)
+
+
 class TodoSimple(Resource):
     def put(self, ):
         systems = request.form['systems']
@@ -154,6 +206,8 @@ class TodoSimple(Resource):
 api.add_resource(TodoSimple, '/update')
 
 if __name__ == '__main__':
+    if not os.path.exists('bogie.db'):
+        db.create_all()
     app.run(debug=True)
 
 
