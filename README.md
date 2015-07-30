@@ -79,7 +79,7 @@ for all components of by a source
 
 ---
 
-## Viewing Logs
+## Deleting Logs
 
 you can simply use the delete button
 
