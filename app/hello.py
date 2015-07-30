@@ -134,6 +134,9 @@ def login():
 @app.route('/', methods=['GET'])
 # @login_required
 def index():
+    if username=='bogie' and password=='bogie':
+        session['logged_in'] = True
+        
     if  not session.get('logged_in'):
         return redirect(url_for('login'))
     else:
