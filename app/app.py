@@ -75,6 +75,17 @@ def current_comp(components):
     return render_template('current.html',list_of_items=log)
 
 
+@app.route('/current/source/<string:source>', methods=['GET'])
+def current_source(source):
+    query = db.session.query(Logz.components.distinct()).filter_by(source=source).all()
+    log = []
+    for x in query:
+        # print x[0]
+        log.append(Logz.query.filter_by(components=x[0],source=source).order_by(Logz.timestamp.desc()).first())
+    return render_template('current.html',list_of_items=log)
+
+
+
 
 @app.route('/current/systems/<string:systems>', methods=['GET'])
 def current_sys(systems):
@@ -100,6 +111,12 @@ def get__component_logs(components):
 @app.route('/syslogs/<string:systems>', methods=['GET'])
 def get__system_logs(systems):
     list_of_items = Logz.query.filter_by(systems=systems).order_by(Logz.timestamp.desc())
+    return render_template('hello.html',list_of_items=list_of_items)
+
+
+@app.route('/sourcelogs/<string:source>', methods=['GET'])
+def get__source_logs(source):
+    list_of_items = Logz.query.filter_by(source=source).order_by(Logz.timestamp.desc())
     return render_template('hello.html',list_of_items=list_of_items)
 
 
