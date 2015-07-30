@@ -268,12 +268,12 @@ class TodoSimple(Resource):
         nextz = request.form['next']
 
         u = Logz.query.filter_by(systems=systems, components=components, version=version, timestamp=timestamp, source=source).first()
+        print u
         if u is not None:
             db.session.delete(u)
             db.session.commit()
-            # return {'status':True}
-        return redirect('/' + nextz)
-    return "'status': False"
+            return redirect('/' + nextz)
+        return {'status': False}
 
 
 
