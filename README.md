@@ -33,9 +33,19 @@ docker build -t active_versions:v2 .
 
 ### Usage
 
+
+starting without username and password
 ```bash
 docker run -d -p 80:80 active_versions:v2
 ```
+
+
+
+starting with user and pass
+```bash
+docker run -d -p -e user="USERNAME" -e pass="PASSOWRD" 80:80 active_versions:v2
+```
+
 
 After few seconds, open `http://<host>` to see the Flask app.
 
