@@ -84,3 +84,7 @@ for all components of by a source
 you can simply use the delete button
 
 ---
+
+
+##Tools used
+nginx + gunicorn + flask
