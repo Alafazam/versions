@@ -28,6 +28,17 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
+# 
+# 
+# 
+#  for adding more columns you have to follow the trail for Extracol  
+#  you have to make changes line 52, 64, 260, 271, 288, 291  
+#  and in current.html and in hello.html
+# 
+# 
+# 
+# 
+
 
 
 class Logz(db.Model):
@@ -38,6 +49,11 @@ class Logz(db.Model):
     version = db.Column(db.String(220))
     timestamp = db.Column(db.DateTime, unique=True)
     source = db.Column(db.String(220))
+    # ExtraCol1 = db.Column(db.String(220))
+    # ExtraCol2 = db.Column(db.String(220))
+    # ExtraCol3 = db.Column(db.String(220))
+
+
 
     def __init__(self, systems=None, components=None, version=None, timestamp=None, source=None):
         self.systems = systems
@@ -45,13 +61,14 @@ class Logz(db.Model):
         self.version = version
         self.timestamp = timestamp
         self.source = source
+        # self.ExtraCol3 = source
+        # self.ExtraCol3 = source
+        # self.ExtraCol3 = source
 
     def __repr__(self):
         return "<'systems': %r, 'components': %r, 'version': %r, 'time': %r, 'source': %r>" % (
         self.systems, self.components, self.version, self.timestamp, self.source)
 
-        # def __repr__(self):
-        #     return {"systems": self.systems, "components": self.components, "version": self.version, "time": self.timestamp, "source": self.source}
 
 class User(db.Model):
     __tablename__ = "users"
@@ -123,10 +140,6 @@ def login():
     session['logged_in'] = True
     return render_template('index.html')
 
-# later on
-# db.init_app(app)
-
-
 
 
 
@@ -195,7 +208,6 @@ def current_sys(systems):
         return render_template('current.html', list_of_items=log)
 
 
-# @app.route('/get',methods = ['GET'])
 @app.route('/logs', methods=['GET'])
 def get_logs():
     if  not session.get('logged_in'):
@@ -235,7 +247,7 @@ def test():
     val = username + " " + password
     return render_template('test.html', value=val)
 
-
+# this is the put api,so you must add new cols here too
 class TodoSimple(Resource):
     def put(self, ):
         susername = request.form['user']
@@ -245,6 +257,12 @@ class TodoSimple(Resource):
         version = request.form['version']
         timestamp = datetime.datetime.utcnow()
         source = request.form['source']
+        # ExtraCol1 = request.form['ExtraCol1']
+        # ExtraCol2 = request.form['ExtraCol2']
+        # ExtraCol3 = request.form['ExtraCol3']
+
+
+
         if username == 'bogie' and password == 'bogie' :
             spass = 'bogie'
             susername = 'bogie' 
@@ -257,8 +275,9 @@ class TodoSimple(Resource):
         else:
             return "'Error': Unauthorised Access"
 
-        # return "{'systems': %s, 'components': %s, 'version': %s, 'time': %s, 'source': %s}"% systems,components,version,time,source
 
+
+    # this is for delete request 
     def post(self):
         components = request.form['components']
         version = request.form['version']
@@ -266,19 +285,17 @@ class TodoSimple(Resource):
         timestamp = request.form['timestamp']
         source = request.form['source']
         nextz = request.form['next']
-
+        # ExtraCol1 = request.form['ExtraCol1']
+        # ExtraCol2 = request.form['ExtraCol2']
+        # ExtraCol3 = request.form['ExtraCol3']
         u = Logz.query.filter_by(systems=systems, components=components, version=version, timestamp=timestamp, source=source).first()
-        print u
+        # print u
         if u is not None:
             db.session.delete(u)
             db.session.commit()
             return redirect('/' + nextz)
         return {'status': False}
 
-
-
-# @app.route('/delete', methods=['POST'])
-# def deleting():
 
 
 
@@ -288,15 +305,6 @@ if __name__ == '__main__':
     if not os.path.exists('bogie.db'):
         db.create_all()
     app.run(debug=True)
-
-
-
-    # from database import db_session
-    # from models import log
-    # u = User('admin', 'admin@localhost')
-    # db_session.add(u)
-    # db_session.commit()
-
 
     # put('http://localhost:5000/update', data={'systems':'systems', 'components': 'components', 'version': 'version', 'source': 'source'})
 
