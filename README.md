@@ -24,6 +24,10 @@
 
 1. Git clone from [repo](https://github.com/Alafazam/versions) .
 
+```bash
+git clone https://github.com/Alafazam/versions
+```
+
 2. build using docker build -t active_versions:v2 .
 
 ```bash
@@ -43,14 +47,35 @@ docker run -d -p 80:80 active_versions:v2
 
 starting with user and pass
 ```bash
-docker run -d -p -e user="USERNAME" -e pass="PASSOWRD" 80:80 active_versions:v2
+docker run -d -p -e user="USERNAME" -e pass="PASSWORD" 80:80 active_versions:v2
 ```
 
 
 After few seconds, open `http://<host>` to see the Flask app.
 
 
-### Api
+### Adding new Columns
+To add new columns you have to make changes in 3 files -> 
+
+* Hello.py 
+
+ Add the new column to the model, in line 52 and 64. 
+
+ Add new column values to put and post request in line 260. 
+
+
+* Current.html
+
+ Add the new column to the table.
+
+
+* Hello.html
+
+ Add the new column to the table.
+
+
+
+#Api
 
 ## Logging version changes
 
@@ -59,33 +84,41 @@ After few seconds, open `http://<host>` to see the Flask app.
 	>>>put('http://192.168.59.103/update', data={'systems':'dev', 'components': 'components 1', 'version': 'version 2.', 'source': 'alaf',   'user':'q','pass':'a'}).json()
 
     Done
----
+
 
 ## Viewing Logs
 
-for current component versions of all systems(dev|production|test)
+Current component versions of all systems(dev|production|test)
+
 `http://<host>/current`
 
-for current versions of a component
+Current versions of a component
+
 `http://<host>/current/components/component_name`
 
-for current components of a system(dev|production|test)
+Current components of a system(dev|production|test)
+
 `http://<host>/current/systems/system_name`
 
-for latest updates by a source
+Latest updates by a source
+
 `http://<host>/current/source/source_name`
 
 
-for all components of all system(dev|production|test)
+All components of all system(dev|production|test)
+
 `http://<host>/logs`
 
-for all components of a system(dev|production|test)
+All components of a system(dev|production|test)
+
 `http://<host>/syslogs/system_name`
 
-for all versions of a component
+All versions of a component
+
 `http://<host>/logs/component_name`
 
-for all components of by a source
+All components of by a source
+
 `http://<host>/sourcelogs/source_name`
 
 ---
