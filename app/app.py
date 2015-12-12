@@ -27,20 +27,6 @@ db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-
-# 
-# 
-# 
-#  for adding more columns you have to follow the trail for Extracol  
-#  you have to make changes line 52, 64, 260, 271, 288, 291  
-#  and in current.html and in hello.html
-# 
-# 
-# 
-# 
-
-
-
 class Logz(db.Model):
     __tablename__ = 'logs'
     id = db.Column(db.Integer, primary_key=True)
@@ -133,7 +119,7 @@ def login():
     qusername = request.form['username']
     qpassword = request.form['password']
     registered_user = User.query.filter_by(username=qusername,password=qpassword).first()
-    print registered_user
+    
     if registered_user is None:
         return redirect(url_for('login'))
     login_user(registered_user)
@@ -164,8 +150,6 @@ def current():
     else:
         query = db.session.query(Logz.components.distinct()).all()
         systms = db.session.query(Logz.systems.distinct()).all()
-        print systms
-
         log = []
         for x in query:
             for y in systms:
@@ -242,11 +226,6 @@ def logout():
     return redirect(url_for('index')) 
 
 
-@app.route('/test', methods=['GET'])
-def test():
-    val = username + " " + password
-    return render_template('test.html', value=val)
-
 # this is the put api,so you must add new cols here too
 class TodoSimple(Resource):
     def put(self, ):
@@ -260,8 +239,6 @@ class TodoSimple(Resource):
         # ExtraCol1 = request.form['ExtraCol1']
         # ExtraCol2 = request.form['ExtraCol2']
         # ExtraCol3 = request.form['ExtraCol3']
-
-
 
         if username == 'bogie' and password == 'bogie' :
             spass = 'bogie'
