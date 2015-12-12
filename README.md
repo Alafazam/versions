@@ -1,5 +1,9 @@
 # Active system components version storage and visualization
 
+Log versions of active componects in your system through a JSON Api.
+
+
+
 
 ## Webservice
 
@@ -125,10 +129,6 @@ All components of by a source
 
 ## Deleting Logs
 
-you can simply use the delete button
+you can simply use the delete button from the web interface.
 
 ---
-
-
-##Tools used
-nginx + gunicorn + flask
